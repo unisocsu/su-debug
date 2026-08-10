@@ -2,6 +2,7 @@ apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion 19
+    namespace 'com.unisocsu.sudebug'
     defaultConfig {
         applicationId "com.unisocsu.sudebug"
         minSdkVersion 19
