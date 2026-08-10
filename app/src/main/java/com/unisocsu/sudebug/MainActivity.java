@@ -1,23 +1,23 @@
 package com.unisocsu.sudebug;
 
+import android.app.Activity;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.TextView;
-import androidx.appcompat.app.AppCompatActivity;
 import java.io.DataOutputStream;
 import java.net.InetAddress;
 import java.net.NetworkInterface;
 import java.util.Collections;
 import java.util.List;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Button btnActivate = findViewById(R.id.btn_activate);
-        TextView tvStatus = findViewById(R.id.tv_status);
+        Button btnActivate = (Button) findViewById(R.id.btn_activate);
+        TextView tvStatus = (TextView) findViewById(R.id.tv_status);
 
         btnActivate.setOnClickListener(v -> {
             try {
